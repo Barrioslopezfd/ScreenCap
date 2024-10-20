@@ -9,4 +9,4 @@ You'll need a compositor for some of the features, i used Picom.
 
 sudo apt install picom
 
-add exec --no-startup-id picom to your i3 config to start picom on boot.
+add exec --no-startup-id picom -b to your i3 config to start picom on boot.
