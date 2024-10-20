@@ -8,10 +8,9 @@ class Window:
     def __init__(self) -> None:
         self.root = Tk()
         self.root.wait_visibility()
-        print(self.root.winfo_screenwidth)
         self.width, self.height = pg.size()
         self.root.wm_geometry(f"{self.width}x{self.height}+0+0")
-        self.root.attributes('-alpha', 0)
+        self.root.attributes('-alpha', 0.5)
         self.root.config(cursor="cross")
         self.start_x = 0
         self.start_y = 0
